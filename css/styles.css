@@ -9,7 +9,15 @@ font-family: 'Montserrat';
 body {
     margin: 0px auto;
 }
-
+.home-container {
+    min-height: 90vh;
+    background : url('../images/banniere.png');
+    background-size: cover;
+    width: auto;
+}
+.logo {
+    width: 200px ;height: 80px;
+}
 /*  texte de page */
 
 header.header {
@@ -288,626 +296,192 @@ nav {text-align: right;position: sticky;flex-wrap: wrap;top : 0;
 }
 /* pied de page */
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 100px;
-    font: weight 600px; ;
-
-}
-footer a.cgv {
-    text-decoration: none;
-    color: black;
-}
-
-@media(min-width: 600px) and (max-width: 1024px)
-{
-	@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
-
-*{
-font-family: 'Montserrat';
-}
-
-body {
-    margin: 0px auto;
-}
-
-/*  texte de page */
-
-header.header {
+.footer {
+    min-height: 100px;
     display: flex;
     align-items: center;
-}
-header.header img {
-    width: 150px;
-}
-
-section.top-page {
-    background : url('../images/banniere.png');
-    background-size: cover;
-    height: 80vh;
-    padding: 25px;
-}
-
-/* page de bienvenue (landing page) */
-
-.landing-page {
-    padding: 20px 50px;
-}
-
-
-.big-title {
-    color: palevioletred;
-    font-size: 70px;
-    font-family: "Abril FatFace";
-    font-weight: 100; 
-    flex-direction: column;
-    justify-content: left;
-}
-
-.scroll-down {
-    color: white;
-    text-decoration: none;
-    position: absolute;
-    bottom: 160px;
-}
-
-/* menu de navigation */
-
-nav.nav {
-    display: flex;
+    margin-top: 50px;
     justify-content: space-between;
-    list-style: none;
-    width: 900px;
-    margin-left: 150px;
-    text-align: right;
+    padding: 0 100px;
     flex-wrap: wrap;
-    position: sticky;
-    
-    
 }
 
-nav.nav li {
-    color:white;
-    text-align: left;
-    
-    
-
+.copyrights {
+    padding-right: 20px;
 }
 
-/* services */
-
-.services {
-    display: flex;
-    justify-content: space-between;
-    margin: 100px;
-    
-}
-
-.service-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
-}
-
-.delivery-icon {
-    font-size: 50px;
-    color :palevioletred;
-}
-
-.service-details {
+.conditions {
+    color: black;
+    text-decoration: none;
     font-weight: 600;
-    width: 200px;
-    text-align: center;
-}
-nav {text-align: right;position: sticky;flex-wrap: wrap;top : 0;
-
-}
-/* best sells */
-
-.section-title {
-    font-size: 50px;
-    font-family: 'Abril FatFace', cursive;
-    font-weight: 100; 
-    position: relative;
-}
-
-.section-title::before{
-    content: "";
-    position: absolute;
-    background-color : palevioletred;
-    width: 50px;
-    height: 7px ;
-    bottom: 0;
-}
-.best-produits {
-    min-height: 500px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.bests-items {
-    margin: 100px;
-}
-.veste-box {
-    background-image: url(../images/blazers/images36.jpg);
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    min-width: 600px;
-    height: 100px;
-    flex: 1;
-}
-.no-grid {
-    min-width: 150px;
-    height: 500px;
-    flex: 1;
-}
-.veste1 {
-    background-image: url(../images/veste\ +\ pantalon/21.jpg);
-
-}
-
-.veste2 {
-    background-image: url(../images/veste\ +\ jupe/50.jpg);
-}
-
-.veste3 {
-    background-image: url(../images/blazers/19.jpg);
-}
-
-.veste4 {
-    background-image: url(../images/veste\ +short/8.jpeg);
-}
-
-.veste-details {
-    background-color: #FFFFFFDF;
-    position: absolute;
-    width: 80%;
-    bottom: 0;
-    padding: 40px 20px;
-}
-.veste-name {
-    font-size: 22px;
-    font-weight: 900;
-    line-height: 3px;
-}
-.veste-price {
-    color: palevioletred;
-    font-weight: 900;
-    line-height: 15px;
-    font-size: 20px;
-}
-
-/* nos vestes */
-.section-title {
-    font-size: 50px;
-    font-family: 'Abril FatFace', cursive;
-    font-weight: 100; 
-    position: relative;
-}
-
-.section-title::before{
-    content: "";
-    position: absolute;
-    background-color :palevioletred;
-    width: 50px;
-    height: 7px ;
-    bottom: 0;
-}
-.bestproduits {
-    min-height: 500px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.bests-vests {
-    margin: 100px;
-}
-.vest-box {
-    background-image: url(../images/blazers/19.jpg);
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    min-width: 600px;
-    height: 100px;
-    flex: 1;
-}
-.no-grid {
-    min-width: 150px;
-    height: 500px;
-    flex: 1;
-}
-.vest1 {
-    background-image: url(../images/veste\ +\ pantalon/36.jpg);
-
-}
-
-.vest2 {
-    background-image: url(../images/blazers/10.jpg);
-}
-
-.vest3 {
-    background-image: url(../images/veste\ +\ jupe/4.jpg);
-}
-
-.vest4 {
-    background-image: url(../images/veste\ +short/9.jpg);
-}
-
-.vest-details {
-    background-color: #FFFFFFDF;
-    position: absolute;
-    width: 80%;
-    bottom: 0;
-    padding: 10px 10px;
-}
-.vest-name {
-    font-size: 22px;
-    font-weight: 900;
-    line-height: 3px;
-}
-.vest-price {
-    color: palevioletred;
-    font-weight: 900;
-    line-height: 15px;
-    font-size: 20px;
-}
-.solde {
-    color: palevioletred;
-    font-weight: 900;
-    line-height: 15px;
-    font-size: 20px;
-    text-decoration: line-through red;
-}
-.images {
-    display: flex;
-    padding:100px;
-    animation-duration: 5s;
-    animation-name: mesproduits;
-   
-    
-    
-}
-#caroussel {width: 500 px;
-    overflow: auto;
-    border: 2px solid palevioletred;
-
-}
-@keyframes mesproduits {
-    0%{
-        transform: translateX(0);
-    }
-    25% {
-        transform: translate(-640px);
-    }
-    50% {
-        transform: translate(-1280px);
-    }
-    100% {
-        transform: translate(-1920px);
-    }
-}
-/* pied de page */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 100px;
-    font: weight 600px; ;
-
-}
-footer a.cgv {
-    text-decoration: none;
-    color: black;
-}
 }
 
 
 
-@media(min-WIDTH : 300px )  and   ( max-width: 900px)
-{
-    @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
-    @import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
-    
-    *{
-    font-family: 'Montserrat';
-    }
-    
-    body {
-        margin: 0px auto;
-    }
-    
-    /*  texte de page */
-    
-    header.header {
-        display: flex;
-        align-items: center;
-    }
-    header.header img {
-        width: 400px;
-    }
-    
-    section.top-page {
-        background : url('../images/banniere.png');
-        background-size: contain;
-        height: 90vh;
-        padding: 25px;
-    }
-    
-    /* page de bienvenue (landing page) */
-    
-    .landing-page {
-        padding: 20px 30px;
-    }
-    
-    
-    .big-title {
-        color: palevioletred;
-        font-size: 40px;
-        font-family: "Abril FatFace";
-        font-weight: 20; 
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .scroll-down {
-        color: white;
-        text-decoration: none;
-        position: absolute;
-        bottom: 160px;
-    }
-    
-    /* menu de navigation */
-    
-    nav.nav {
-        display: flex;
+@media (max-width: 1150px) {
+
+    .header {
         justify-content: space-between;
-        list-style: none;
-        width: 50px;
-        margin-left: 10px;
-        text-align: left;
-        flex-wrap: wrap;
-        position: sticky;
-        
-        
     }
-    
-    nav.nav li {
-        color :white;
-        text-align: left;
-        
-        
-    
-    }
-    
-    /* services */
-    
-    .services {
-        display: flex;
-        justify-content: space-between;
-        margin: 70px;
-        
-    }
-    
-    .service-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-    
-    }
-    
-    .delivery-icon {
-        font-size: 50px;
-        color :palevioletred;
-    }
-    
-    .service-details {
-        font-weight: 600;
-        width: 300px;
-        text-align: center;
-    }
-    nav {text-align: right;position: sticky;flex-wrap: wrap;top : 0;
-    
-    }
-    /* best sells */
-    
-    .section-title {
-        font-size: 50px;
-        font-family: 'Abril FatFace', cursive;
-        font-weight: 150; 
+
+    .burger-container {
+        width: 35px;
+        height: 30px;
         position: relative;
     }
-    
-    .section-title::before{
+
+    .burger {
+        display: block;
+        height: 3px;
+        width: 30px;
+        background: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: background 0.4s;
+    }
+
+    .burger-container.active .burger {
+        background: transparent;
+    }
+
+    .burger::before {
         content: "";
-        position: absolute;
-        background-color : palevioletred;
-        width: 50px;
-        height: 7px ;
-        bottom: 0;
-    }
-    .best-produits {
-        min-height: 500px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .bests-items {
-        margin: 80px;
-    }
-    .veste-box {
-        background-image: url(../images/blazers/images36.jpg);
-        position: relative;
-        background-size: cover;
-        background-position: center;
-        min-width: 900px;
-        height: 90px;
-        flex: 1;
-    }
-    .no-grid {
-        min-width: 200px;
-        height: 500px;
-        flex: 1;
-    }
-    .veste1 {
-    background-image: url(../images/veste\ +\ pantalon/21.jpg);
-
-}
-
-.veste2 {
-    background-image: url(../images/veste\ +\ jupe/50.jpg);
-}
-
-.veste3 {
-    background-image: url(../images/blazers/19.jpg);
-}
-
-.veste4 {
-    background-image: url(../images/veste\ +short/8.jpeg);
-}
-    .veste-details {
-        background-color: #FFFFFFDF;
-        position: absolute;
-        width: 90%;
-        bottom: 0;
-        padding: 40px 20px;
-    }
-    .veste-name {
-        font-size: 22px;
-        font-weight: 1000;
-        line-height: 3px;
-    }
-    .veste-price {
-        color: palevioletred;
-        font-weight: 900;
-        line-height: 15px;
-        font-size: 20px;
-    }
-    
-    /* nos vestes */
-    .section-title {
-        font-size: 50px;
-        font-family: 'Abril FatFace', cursive;
-        font-weight: 100; 
-        position: relative;
-    }
-    
-    .section-title::before{
-        content: "";
-        position: absolute;
-        background-color :palevioletred;
-        width: 100px;
-        height: 10px ;
-        bottom: 0;
-    }
-    .bestproduits {
-        min-height: 500px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .bests-vests {
-        margin: 50px;
-    }
-    .vest-box {
-        background-image: url(../images/blazers/19.jpg);
-        position: relative;
-        background-size: cover;
-        background-position: center;
-        min-width: 900px;
-        height: 300px;
-        flex: 1;
-    }
-    .no-grid {
-        min-width: 400px;
-        height: 400px;
-        flex: 1;
-    }
-    .vest1 {
-        background-image: url(../images/veste\ +\ pantalon/11.jpg);
-    
-    }
-    
-    .vest2 {
-        background-image: url(../images/blazers/10.jpg);
-    }
-    
-    .vest3 {
-        background-image: url(../images/veste\ +\ jupe/4.jpg);
-    }
-    
-    .vest4 {
-        background-image: url(../images/veste\ +short/9.jpg);
-    }
-    
-    .vest-details {
-        background-color: #FFFFFFDF;
         position: absolute;
         width: 100%;
+        height: 100%;
+        background: white;
+        bottom: 8px;
+        transition: transform 0.4s,
+            bottom 0.4s,
+            background 0.4s;
+    }
+
+    .burger-container.active .burger::before {
         bottom: 0;
-        padding: 10px 10px;
+        transform: rotate(-45deg);
+        background: black;
     }
-    .vest-name {
-        font-size: 40px;
-        font-weight: 1000;
-        line-height: 5px;
+
+    .burger::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: white;
+        top: 8px;
+        transition: transform 0.4s,
+            top 0.4s background 0.4s;
     }
-    .vest-price {
-        color: palevioletred;
-        font-weight: 900;
-        line-height: 15px;
-        font-size: 20px;
+
+    .burger-container.active .burger::after {
+        top: 0;
+        transform: rotate(45deg);
+        background: black;
     }
-    .solde {
-        color: palevioletred;
-        font-weight: 1000;
-        line-height: 15px;
-        font-size: 20px;
-        text-decoration: line-through red;
+
+    .nav-links {
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        background: white;
+        left: 0;
+        top: -50vh;
+        transition: top 0.4s ease-in-out;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 0 50px;
     }
-    .images {
-        display: flex;
-        padding:100px;
-        animation-duration: 5s;
-        animation-name: mesproduits;
-       
-        
-        
+
+    .nav-links.active {
+        top: 0;
     }
-    #caroussel {width: 500 px;
-        overflow: auto;
-        border: 2px solid palevioletred;
-    
+
+    .nav-links li {
+        margin: 0;
     }
-    @keyframes mesproduits {
-        0%{
-            transform: translateX(0);
-        }
-        25% {
-            transform: translate(-640px);
-        }
-        50% {
-            transform: translate(-1280px);
-        }
-        100% {
-            transform: translate(-1920px);
-        }
-    }
-    /* pied de page */
-    
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 20px 100px;
-        font: weight 600px; ;
-    
-    }
-    footer a.cgv {
-        text-decoration: none;
+
+    .nav-links a {
         color: black;
+        font-size: 30px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px;
+    }
+
+    .services-container div {
+        margin: 30px;
+    }
+
+    .grid-vests {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .grid {
+        flex: 1;
+        min-width: 350px;
+        height: 500px;
     }
 }
+
+@media (max-width: 550px) {
+
+    .logo {
+        width: 100px;
+    }
+
+    .landing,
+    .header,
+    .best-produits-container,
+    .vestes-container,
+    .footer {
+        padding: 0 7%;
+    }
+
+    .header {
+        height: 100px;
+    }
+
+    .big-title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .veste-box {
+        min-width: 300px;
+    }
+
+    .veste-name,
+    .plant-box::before {
+        font-size: 20px;
+    }
+
+    .veste-price {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .footer {
+        justify-content: center;
+    }
+}
+

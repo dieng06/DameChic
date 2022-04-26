@@ -9,28 +9,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js "></script>
 </head>
 <body>
-<section class="top-page">
-        <header class="header">
-            <img src="images/logo.jpg" alt="Logo du site">
+<section class="home-container"id="home" >
+        <header class="header"id="header" >
+            <img src="images/logo.jpg" alt="Logo du site"class="logo">
+
+            <ul class="nav-links">
             <nav class="nav">
                 <li>Accueil</li>
                 <li>Nos meilleures ventes</li>
                 <li>Nos produits</li>
                 <li>Soldes</li>
             </nav>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
         </header>
-       <div class="landing-page">
+       <div class="landing">
         <h1 class="big-title">Vous voulez être chic? Venez chez Dame Chic !</h1> 
         <a class="scroll-down" href="">Scroll <i class="fas fa-angle-down"></i></a>
        </div,>
-        
-      
     </section>
-    <h2 class="section-title">
-        Catégories de produits
-    </h2>
-     <section class="services">
-         
+    
+     <section id="services" class="services-container">
+        <h2 class="section-title">
+            Catégories de produits
+        </h2>
         <div class="service-item">
             <img src="images/veste + pantalon/36.jpg" alt="tailleurs">
             <p class="service-details">vestes + pantalon</p>
@@ -46,11 +50,11 @@
         </div>
 
     </section> 
-    <h2 class="section-title">
-        Nos meilleures ventes
-    </h2>
-    <section class="bests-items">
     
+    <section id="bests-items" class="bests-items-container">
+        <h2 class="section-title">
+            Nos meilleures ventes
+        </h2>
     <Div class="best-produits">
         <a class="veste-box veste1 no-grid"> 
             <Div class="veste-details">
@@ -80,10 +84,12 @@
     
 </section> 
 
-   <h2 class="section-title">
+  
+   <section id="caroussel" class="caroussel-container"> 
+       <h2 class="section-title">
     Nos produits
 </h2>
-   <section>
+
     <div id="caroussel">
         <div class="images">
             <img src="images/veste +short/9.jpg" alt="">
@@ -103,11 +109,11 @@
     </div>
 </section>
 <section>
-    <h2 class="section-title">
-        Soldes
-    </h2>
-    <section class="bests-vests">
-    
+   
+    <section id="bests-vests" class="bests-vests-container">
+        <h2 class="section-title">
+            Soldes
+        </h2>
     <Div class="bestproduits">
         <a class="vest-box vest1 no-grid"> 
             <Div class="vest-details">
@@ -141,12 +147,23 @@
         </a>
     </Div>
    </section>
+   <footer id="footer" class="footer">
+    <span class="copyrights">&copy; 2022 - Dame Chic</span>
+    <span class="contact"> Adresse : Bargny-Dakar     Téléphone : 77 282 93 97</span>
+
+    <a href="#" class="conditions">Condition générales de vente</a>
+</footer> 
+<script>
+    const burgerContainer = document.querySelector('.burger-container');
+    const navLinks = document.querySelector('.nav-links');
+
+    burgerContainer.addEventListener('click', () => {
+        burgerContainer.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    })
+</script>
 
 
-<footer>
-    <p class="copyright">&COPY; 2022 - Dame Chic</p>
-    <p class="contact">&COPY; Adresse : Bargny  Téléphone : 77 282 93 97</p>
-    <a href="" class="CGV">Condition Générale de Vente</a>
-</footer>
 </body>
-</html>
+</html> 
+
